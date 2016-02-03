@@ -1,0 +1,32 @@
+body{
+	margin: 20px 0px 0px 100px;
+	max-width: 800px;
+	background-color: #eeeeee;
+	color: #222222;
+}
+
+h1{
+  font: 24px 'Segoe UI', Tahoma, sans-serif;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1pt solid;
+}
+
+h4{
+	font: 18px 'Segoe UI', Tahoma, sans-serif;
+	line-height: 1.5;
+}
+
+p{
+	font: 20px Times, serif;
+	line-height: 1.5;
+}
+
+p#footer{
+	font: 14px 'Segoe UI', Tahoma, sans-serif;
+	padding: 10px 0px 0px 0px;
+	border-top: 1pt solid;
+}
+
+a{
+	color: #4400cc;
+}
