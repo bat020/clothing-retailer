@@ -23,9 +23,9 @@
         {{#each this}}
           <li data-index="{{uid}}">
             <p>{{desc}}</p>
-            <p>{{taglist}}</p>
-            <p>£{{price}}, {{quant}} in stock</p>
-            <button>BUY</button>
+            <p class="price">£{{inPounds price}}</p>
+            <p>{{quant}} in stock <button>BUY</button></p>
+            <p class="taglist">{{hash taglist}}</p>
           </li>
         {{/each}}
 

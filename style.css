@@ -1,6 +1,5 @@
 body{
 	margin: 20px 0px 0px 100px;
-	/*max-width: 800px;*/
 	background-color: #dddddd;
 	color: #222222;
 }
@@ -11,20 +10,19 @@ h1{
   border-bottom: 1pt solid;
 }
 
-h4{
-	font: 18px 'Segoe UI', Tahoma, sans-serif;
-	line-height: 1.5;
-}
-
 p{
-	font: 20px Times, serif;
-	line-height: 1.5;
+	font: 18px 'Segoe UI', Tahoma, sans-serif;
+	line-height: 1.2;
 }
 
-p#footer{
-	font: 14px 'Segoe UI', Tahoma, sans-serif;
-	padding: 10px 0px 0px 0px;
-	border-top: 1pt solid;
+p.price{
+	font: 20px 'Segoe UI', Tahoma, sans-serif;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+p.taglist{
+	font: 12px 'Segoe UI', Tahoma, sans-serif;
 }
 
 a{
