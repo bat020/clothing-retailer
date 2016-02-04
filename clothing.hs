@@ -55,14 +55,3 @@ voucher items
 
 netTotal :: [Item] -> Money
 netTotal items = rawTotal items - voucher items
-
-
--- test data
-
-item01 = Item 1 "alpha" [] 100 0
-item02 = Item 2 "bravo" [] 200 1
-item03 = Item 3 "charlie" [] 300 2
-item04 = Item 4 "delta" [] 400 1
-
-stock = [item01, item02, item03]
-trolley = [item04]

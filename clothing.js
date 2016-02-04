@@ -57,12 +57,3 @@ Items.prototype.voucher = function () {
 Items.prototype.netTotal = function () {
   return this.rawTotal() - this.voucher();
 }
-
-const item01 = new Item(1, "alpha", [], 100, 0);
-const item02 = new Item(2, "bravo", [], 200, 1);
-const item03 = new Item(3, "charlie", [], 300, 2);
-const item04 = new Item(4, "delta", [], 400, 1);
-const shoe = new Item(5, "shoe", ["footwear"], 7500, 1);
-
-const stock = new Items([item01, item02, item03]);
-const trolley = new Items([item04]);
