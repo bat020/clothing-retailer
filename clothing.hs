@@ -14,12 +14,12 @@ data Item  = Item { uid   :: Id
 
 transferItem :: [Item] -> [Item] -> Id -> ([Item], [Item])
 transferItem source target idcode =
-  (takeFrom source idcode, putIn target $ getItem source idcode)
+  (takeOut source idcode, putIn target $ getItem source idcode)
 
-takeFrom :: [Item] -> Id -> [Item]
-takeFrom [] _ = []
-takeFrom (item : rest) idcode
-  | uid item /= idcode = item : takeFrom rest idcode
+takeOut :: [Item] -> Id -> [Item]
+takeOut [] _ = []
+takeOut (item : rest) idcode
+  | uid item /= idcode = item : takeOut rest idcode
   | quant item == 0 = item : rest
   | otherwise = item { quant = quant item - 1 } : rest
 
