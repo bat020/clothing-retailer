@@ -2,7 +2,7 @@
 
 A single page application coded in **JavaScript** with a bit of help from the
 **jQuery** and **Handlebars** libraries. Open `index.html` in your browser to
-run it.
+run it, or check out the live version at [bat020.github.io/clothing-retailer/](http://bat020.github.io/clothing-retailer/)
 
 ### What does it do?
 
