@@ -1,13 +1,13 @@
 body{
-	margin-left: 60px;
+	margin: 0px 60px;
 	background-color: #bbbbbb;
 	color: #222222;
 }
 
 h1{
   font: 48px 'Segoe UI', Tahoma, sans-serif;
-  padding: 0px 0px 10px 0px;
-  border-bottom: 1pt solid;
+	margin: 0px;
+  padding: 20px 0px 0px 0px;
 }
 
 p{
@@ -15,9 +15,27 @@ p{
 	line-height: 1.2;
 }
 
+p.trolley{
+	font: 18px 'Segoe UI', Tahoma, sans-serif;
+	line-height: 1.5;
+	margin: 0px;
+}
+
 p.footnote{
 	font: 13px 'Segoe UI', Tahoma, sans-serif;
 	line-height: 1.0;
+}
+
+a.remove-link{
+	font: 12px 'Segoe UI', Tahoma, sans-serif;
+	color: #222222;
+	text-decoration: none;
+}
+
+a.remove-link:hover{
+	font: 12px 'Segoe UI', Tahoma, sans-serif;
+	color: #222222;
+	text-decoration: underline;
 }
 
 button{
@@ -26,13 +44,29 @@ button{
 }
 
 ul{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
-li{
+ul.trolley-list{
+	list-style-type: none;
+}
+
+li.stock-list{
 	display: inline-block;
 	background-color:#f6f6f6;
 	margin: 0px 15px 15px 0px;
-	padding: 0 10px;
+	padding: 0px 10px;
+}
+
+div.trolley-section{
+	background-color: #dddddd;
+	margin: 15px 15px 15px 0px;
+	padding: 10px
+}
+
+
+
+li.trolley-list{
+	margin: 0px 15px 15px 0px;
 }

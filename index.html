@@ -3,11 +3,10 @@
   <head>
 
     <title>Clothing Retailer</title>
-    <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-
     <script src="clothing.js"></script>
     <script src="stock.js"></script>
     <script src="main.js"></script>
@@ -17,41 +16,49 @@
 
     <h1>Clothing Retailer</h1>
 
-    <ul class="trolley-list">
-      <script id="trolley-template" type="text/x-handlebars-template">
+    <div class="trolley-section">
+      <script id="message-template" type="text/x-handlebars-template">
+        {{#if empty}}
+          <p class="trolley">Your shopping cart is empty</p>
+        {{else}}
+          <p class="trolley">
+            Your shopping cart totals £{{inPounds raw}}
+            but you get a £{{inPounds voucher}} voucher
+            so the net total is <b>£{{inPounds net}}</b>
+          </p>
+        {{/if}}
+      </script>
+      <div class="trolley-message"></div>
+      <ul class="trolley-list">
+        <script id="trolley-template" type="text/x-handlebars-template">
+          {{#each this}}
+            <li>
+              <p class="trolley">
+                {{quant}} &times; {{desc}} = £{{total price quant}}
+                <a href="#" class="remove-link" data-index="{{uid}}">remove</a>
+              </p>
+            </li>
+          {{/each}}
+        </script> 
+      </ul>
+    </div>
 
-        {{#each this}}
-          <li>
-            <p>{{desc}}</p>
-            <p class="buy-button" data-index="{{uid}}">
-              <button>BUY: <b>£{{inPounds price}}</b></button>
-            </p>
-            <p class="footnote">{{inStock quant}}</p>
-            <p class="footnote">{{hash taglist}}</span></p>
-          </li>
-        {{/each}}
-
-      </script> 
-    </ul>
-
-    <hr>
-
-    <ul class="stock-list">
-      <script id="stock-template" type="text/x-handlebars-template">
-
-        {{#each this}}
-          <li>
-            <p>{{desc}}</p>
-            <p class="buy-button" data-index="{{uid}}">
-              <button>BUY: <b>£{{inPounds price}}</b></button>
-            </p>
-            <p class="footnote">{{inStock quant}}</p>
-            <p class="footnote">{{hash taglist}}</span></p>
-          </li>
-        {{/each}}
-
-      </script> 
-    </ul>
+    <div class="stock-section">
+      <ul class="stock-list">
+        <script id="stock-template" type="text/x-handlebars-template">
+          {{#each this}}
+            <li class="stock-list">
+              <p>{{desc}}</p>
+              <p class="buy-button" data-index="{{uid}}">
+                <button>BUY: <b>£{{inPounds price}}</b></button>
+              </p>
+              <p class="footnote">{{inStock quant}}</p>
+              <p class="footnote">{{hash taglist}}</span></p>
+            </li>
+          {{/each}}
+        </script> 
+      </ul>
+    </div>
 
   </body>
 </html>
