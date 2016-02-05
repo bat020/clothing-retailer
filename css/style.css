@@ -22,14 +22,8 @@ p{
 }
 
 p.trolley{
-	font: 18px 'Segoe UI', Tahoma, sans-serif;
 	line-height: 1.5;
 	margin: 0px;
-}
-
-p.footnote{
-	font: 13px 'Segoe UI', Tahoma, sans-serif;
-	line-height: 1.0;
 }
 
 a.remove-link{
@@ -39,14 +33,7 @@ a.remove-link{
 }
 
 a.remove-link:hover{
-	font: 12px 'Segoe UI', Tahoma, sans-serif;
-	color: #222222;
 	text-decoration: underline;
-}
-
-button{
-	font: 16px 'Segoe UI', Tahoma, sans-serif;
-	line-height: 1.7;
 }
 
 ul{
@@ -58,15 +45,19 @@ ul.trolley-list{
 	list-style-type: none;
 }
 
+p.footnote{
+	font: 13px 'Segoe UI', Tahoma, sans-serif;
+	line-height: 1.0;
+}
+
+button{
+	font: 16px 'Segoe UI', Tahoma, sans-serif;
+	line-height: 1.7;
+}
+
 li.stock-list{
 	display: inline-block;
 	background-color:#f6f6f6;
 	margin: 0px 15px 15px 0px;
 	padding: 0px 10px;
-}
-
-
-
-li.trolley-list{
-	margin: 0px 15px 15px 0px;
 }

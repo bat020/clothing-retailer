@@ -18,8 +18,8 @@ function registerHelpers () {
   Handlebars.registerHelper('inPounds', pence => (pence / 100).toFixed(2));
   Handlebars.registerHelper('justPounds', pence => (pence / 100).toFixed(0));
   Handlebars.registerHelper('inStock', q => q > 0 ? q + ' in stock' : 'out of stock');
-  Handlebars.registerHelper('hash', tags => tags.map(tag => '#' + tag).join(' '));
   Handlebars.registerHelper('total', (p, q) => (p * q / 100).toFixed(2));
+  Handlebars.registerHelper('hash', tags => tags.map(tag => '#' + tag).join(' '));
 }
 
 // generate HTML from templates
