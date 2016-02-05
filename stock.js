@@ -1,5 +1,4 @@
 function buildStock() {
-
   var stockList = [
     {
       "uid": 0,
@@ -93,12 +92,8 @@ function buildStock() {
       "quant": 5
     }
   ];
-
   var itemList = stockList.map(hash =>
     new Item(hash.uid, hash.desc, hash.taglist, hash.price, hash.quant)
   );
-
   return new Items(itemList);
 }
-
-const stock = buildStock();

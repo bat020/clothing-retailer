@@ -1,6 +1,6 @@
 body{
-	margin: 20px 0px 0px 100px;
-	background-color: #dddddd;
+	margin-left: 60px;
+	background-color: #bbbbbb;
 	color: #222222;
 }
 
@@ -15,33 +15,24 @@ p{
 	line-height: 1.2;
 }
 
-p.price{
-	font: 20px 'Segoe UI', Tahoma, sans-serif;
-	font-weight: bold;
-	line-height: 1.2;
+p.footnote{
+	font: 13px 'Segoe UI', Tahoma, sans-serif;
+	line-height: 1.0;
 }
 
-p.taglist{
-	font: 12px 'Segoe UI', Tahoma, sans-serif;
+button{
+	font: 16px 'Segoe UI', Tahoma, sans-serif;
+	line-height: 1.7;
 }
 
-a{
-	color: #4400cc;
+ul{
+	margin: 0;
+	padding: 0;
 }
 
-
-.stock-list > li{
-	box-sizing:border-box;
+li{
 	display: inline-block;
-	/*cursor: pointer;*/
-	position: relative;
-	transition: 0.2s;
-
 	background-color:#f6f6f6;
-	border:1px solid #dbe3e7;
-	border-radius: 3px;
-	box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.08);
-
-	margin: 0 15px 15px 0;
-	padding: 10px;
+	margin: 0px 15px 15px 0px;
+	padding: 0 10px;
 }

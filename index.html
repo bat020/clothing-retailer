@@ -17,15 +17,36 @@
 
     <h1>Clothing Retailer</h1>
 
+    <ul class="trolley-list">
+      <script id="trolley-template" type="text/x-handlebars-template">
+
+        {{#each this}}
+          <li>
+            <p>{{desc}}</p>
+            <p class="buy-button" data-index="{{uid}}">
+              <button>BUY: <b>£{{inPounds price}}</b></button>
+            </p>
+            <p class="footnote">{{inStock quant}}</p>
+            <p class="footnote">{{hash taglist}}</span></p>
+          </li>
+        {{/each}}
+
+      </script> 
+    </ul>
+
+    <hr>
+
     <ul class="stock-list">
       <script id="stock-template" type="text/x-handlebars-template">
 
         {{#each this}}
-          <li data-index="{{uid}}">
+          <li>
             <p>{{desc}}</p>
-            <p class="price">£{{inPounds price}}</p>
-            <p>{{quant}} in stock <button>BUY</button></p>
-            <p class="taglist">{{hash taglist}}</p>
+            <p class="buy-button" data-index="{{uid}}">
+              <button>BUY: <b>£{{inPounds price}}</b></button>
+            </p>
+            <p class="footnote">{{inStock quant}}</p>
+            <p class="footnote">{{hash taglist}}</span></p>
           </li>
         {{/each}}
 
