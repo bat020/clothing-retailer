@@ -5,8 +5,10 @@
     <title>Clothing Retailer</title>
 
     <link rel="stylesheet" href="style.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
     <script src="clothing.js"></script>
     <script src="stock.js"></script>
     <script src="main.js"></script>
@@ -22,13 +24,14 @@
           <p class="trolley">Your shopping cart is empty</p>
         {{else}}
           <p class="trolley">
-            Your shopping cart totals £{{inPounds raw}}
-            but you get a £{{inPounds voucher}} voucher
+            Your shopping cart totals  <b>£{{inPounds raw}}</b>
+            but you get a £{{justPounds voucher}} voucher
             so the net total is <b>£{{inPounds net}}</b>
           </p>
         {{/if}}
       </script>
       <div class="trolley-message"></div>
+
       <ul class="trolley-list">
         <script id="trolley-template" type="text/x-handlebars-template">
           {{#each this}}

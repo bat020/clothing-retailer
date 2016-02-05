@@ -6,8 +6,14 @@ body{
 
 h1{
   font: 48px 'Segoe UI', Tahoma, sans-serif;
-	margin: 0px;
+	margin: 10px 0px 20px 0px;
   padding: 20px 0px 0px 0px;
+}
+
+div.trolley-section{
+	background-color: #dddddd;
+	margin: 15px 15px 15px 0px;
+	padding: 10px
 }
 
 p{
@@ -57,12 +63,6 @@ li.stock-list{
 	background-color:#f6f6f6;
 	margin: 0px 15px 15px 0px;
 	padding: 0px 10px;
-}
-
-div.trolley-section{
-	background-color: #dddddd;
-	margin: 15px 15px 15px 0px;
-	padding: 10px
 }
 
 
